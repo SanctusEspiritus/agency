@@ -1,0 +1,27 @@
+@mixin breakpoint($point) {
+    @if $point == lg {
+        @media (max-width:1000px) {
+            @content;
+        }
+    }
+    @else if $point == md {
+        @media (max-width:882px) {
+            @content;
+        }
+    } 
+    @else if $point == sm {
+        @media (max-width:759px) {
+            @content;
+        }
+    }
+    @else if $point == smxs {
+        @media (max-width:679px) {
+            @content;
+        }
+    }
+    @else if $point == smxr {
+        @media (max-width:552px) {
+            @content;
+        }
+    }
+}
